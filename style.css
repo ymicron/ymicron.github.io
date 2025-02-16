@@ -5,7 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     padding-top: 148px; /* Ger plats för fixerat header */
-    background-color: #92a8d1;
+    background-color: #fefefe;
 }
 
 /* Header: fixerat längst upp */
@@ -165,6 +165,8 @@ h1 {
 .content {
     padding: 20px;
     text-align: center;
+    width: 40%;
+    margin: 0 auto;
 }
 
 .images {
@@ -172,6 +174,15 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     width: 40%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.images_small {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
     height: auto;
     border: 1px solid black;
 }
@@ -208,4 +219,65 @@ h1 {
 .site-footer p {
     margin: 0;
     font-size: 14px;
+}
+
+.contact-page {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.contact-page h1 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-page p {
+    text-align: center;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;  /* Centrerar rutorna horisontellt */
+}
+
+.info-item {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    width: 40%;  /* Sätt bredden på varje ruta till 40% av sidans bredd */
+}
+
+.info-item h2 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    color: #666;
+}
+
+.info-item a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 5px 0;
 }
