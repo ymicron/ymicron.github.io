@@ -169,6 +169,13 @@ h1 {
     margin: 0 auto;
 }
 
+.works {
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
 .images {
     display: block;
     margin-left: auto;
@@ -244,6 +251,15 @@ h1 {
     flex-direction: column;
     gap: 20px;
     align-items: center;  /* Centrerar rutorna horisontellt */
+}
+
+.works-item {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    width: 40%;  /* Sätt bredden på varje ruta till 40% av sidans bredd */
+    margin: 0 auto;
 }
 
 .info-item {
