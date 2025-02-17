@@ -51,11 +51,24 @@
 
 
         <seciton class="works">
-            <img src="works/work_1.jpeg" class="images">
-            <br>
-            <div class="works-item">
-            Ett av mina första verk. Skapad utifrån 30 slumpmässigt placerade punkter i bilden. Utifrån de har flera cirklar genererats som delvis överlappar varandra. Paletten som färglagt bilden är 'Plasma'.
-            </div>
+            <table class="centered-table">
+                <tr>
+                  <td><img id="mainImage" src="works/image_cs_20230813190314305_s1_gray.png" alt="Huvudbild" class="images_table">
+                    <div class="works-item">
+                        Ett av mina första verk. Skapad utifrån 30 slumpmässigt placerade punkter i bilden. Utifrån de har flera cirklar genererats som delvis överlappar varandra. Paletten som färglagt bilden är 'Plasma'.
+                    </div>
+                </td>
+                  <td>
+                    <div class="icons">
+                    <img src="works/image_cs_20230813190314305_s1_gray.png" alt="Bild 1" class="icon" onclick="changeImage('works/image_cs_20230813190314305_s1_gray.png')">
+                    <img src="works/image_cs_20230813190314305_s1_plasma.png" alt="Bild 2" class="icon" onclick="changeImage('works/image_cs_20230813190314305_s1_plasma.png')">
+                    <img src="works/image_cs_20230813190314305_s1_rainbow.png" alt="Bild 3" class="icon" onclick="changeImage('works/image_cs_20230813190314305_s1_rainbow.png')">
+                    <img src="works/image_cs_20230813190314305_s1_swe_light.png" alt="Bild 4" class="icon" onclick="changeImage('works/image_cs_20230813190314305_s1_swe_light.png')">
+                </div>
+            </td>
+                </tr>
+              </table>
+
             <br><br><hr><br><br><br>
 
             <img src="works/work_2.jpeg" class="images">

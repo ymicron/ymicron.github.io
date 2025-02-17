@@ -185,6 +185,15 @@ h1 {
     border: 1px solid black;
 }
 
+.images_table {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
 .images_small {
     display: block;
     margin-left: auto;
@@ -258,7 +267,7 @@ h1 {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-    width: 40%;  /* Sätt bredden på varje ruta till 40% av sidans bredd */
+    width: 100%;  /* Sätt bredden på varje ruta till 40% av sidans bredd */
     margin: 0 auto;
 }
 
@@ -297,3 +306,56 @@ ul {
 ul li {
     margin: 5px 0;
 }
+
+.container {
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrerar innehållet horisontellt */
+}
+
+
+
+.main-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; /* Justera avståndet mellan bilden och ikonerna om det behövs */
+}
+
+
+.icons .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px; /* Avstånd mellan varje ikon */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icons .icon:hover {
+    transform: scale(1.1);
+}
+
+.centered-table {
+    margin: 0 auto; /* Centrerar tabellen horisontellt */
+    width: 50%; /* Du kan justera bredden på tabellen om du vill */
+  }
+  
+  .centered-table td {
+    padding: 10px; /* Lite padding för att ge utrymme mellan cellerna */
+    text-align: center; /* Centrerar texten i varje cell */
+  }
+  
+
+  .about {
+    text-align: left;
+
+  }

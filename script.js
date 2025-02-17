@@ -16,3 +16,7 @@ window.addEventListener('click', function(event) {
         dropdownMenu.style.display = 'none'; // Stänger menyn om man klickar utanför
     }
 });
+
+function changeImage(imageSrc) {
+    document.getElementById("mainImage").src = imageSrc;
+}
