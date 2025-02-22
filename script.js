@@ -17,6 +17,70 @@ window.addEventListener('click', function(event) {
     }
 });
 
-function changeImage(imageSrc) {
-    document.getElementById("mainImage").src = imageSrc;
+//function changeImage(imageSrc) {
+//    document.getElementById("mainImage").src = imageSrc;
+//}
+
+function changeImage(imageName, imageSrc) {
+    // Hitta bilden med det angivna namnet
+    var image = document.querySelector(`img[id='${imageName}']`);
+    
+    if (image) {
+        // Om bilden finns, ändra dess src
+        image.src = imageSrc;
+    } else {
+        //console.log("Bild med namn " + imageName + " hittades inte.");
+    }
 }
+
+
+
+
+
+window.addEventListener('DOMContentLoaded', function() {
+    // Hämta alla bilder med class="images_table"
+    const images = document.querySelectorAll('.images_table');
+    
+    // Kontrollera om bilderna finns
+    if (images.length === 0) {
+        console.log('Inga bilder med class "images_table" hittades!');
+        return;
+    }
+    
+    // Referens till tabellen för att lägga till miniatyrbilder
+    const thumbnailTable = document.getElementById('thumbnailTable');
+    
+    // Skapa en rad för tabellen
+    let row;
+
+    // För varje bild på sidan, skapa en miniatyrbild och en länk
+    images.forEach((image, index) => {
+        // Skapa en ny rad för tabellen var tredje bild
+        if (index % 3 === 0) {
+            // Skapa en ny rad för varje uppsättning av 3 bilder
+            row = document.createElement('tr');
+            thumbnailTable.appendChild(row);
+        }
+
+        // Skapa en cell i tabellen
+        var cell = document.createElement('td');
+        
+        // Skapa länk till den stora bilden (refererar till bildens id)
+        var link = document.createElement('a');
+        link.href = `#${image.id}`;  // Länk till den aktuella bildens id
+        link.title = `Se Bild ${index + 1}`; // Tooltip på länken
+        
+        // Skapa miniatyrbilden
+        var thumbnail = document.createElement('img');
+        thumbnail.src = image.src; // Använd samma bildkälla för miniatyr
+        thumbnail.alt = `Thumbnail ${index + 1}`;
+        thumbnail.classList.add('thumbnail');
+        
+        // Lägg till miniatyrbilden i länken, och länken i cellen
+        link.appendChild(thumbnail);
+        cell.appendChild(link);
+        
+        // Lägg till cellen i den aktuella raden
+        row.appendChild(cell);
+    });
+});

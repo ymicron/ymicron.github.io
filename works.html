@@ -11,21 +11,21 @@
     <header class="site-header">
         <div class="header-content">
             <!-- Logotypen -->
-            <img src="Img/logo.png" alt="Logo" class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo">
             <h1>Alpha Omega Art</h1>
         </div>
 
         <!-- Språkval dropdown till höger -->
         <div class="language-dropdown" id="language-dropdown">
             <button id="language-btn" class="dropdown-btn">
-                <img src="Img/sweden-flag.png" alt="Swedish" class="flag-icon"> Sv
+                <img src="images/sweden-flag.png" alt="Swedish" class="flag-icon"> Sv
             </button>
             <ul class="dropdown-menu">
                 <li><a href="#" id="language-en">
-                    <img src="Img/uk-flag.png" alt="English" class="flag-icon"> En
+                    <img src="images/uk-flag.png" alt="English" class="flag-icon"> En
                 </a></li>
                 <li><a href="#" id="language-sv">
-                    <img src="Img/sweden-flag.png" alt="Swedish" class="flag-icon"> Sv
+                    <img src="images/sweden-flag.png" alt="Swedish" class="flag-icon"> Sv
                 </a></li>
             </ul>
         </div>
@@ -50,68 +50,1219 @@
         </section>
 
 
+        <!-- Tabell med miniatyrbilder genereras automatiskt av JavaScript -->
+        <table class="thumbnail-table" id="thumbnailTable"></table>
+
+
+        <br><br><hr><br><br><br>
+
         <seciton class="works">
+
             <table class="centered-table">
                 <tr>
-                  <td><img id="mainImage" src="works/image_cs_20230813190314305_s1_gray.png" alt="Huvudbild" class="images_table">
+                  <td><img id="work_1" src="works/image_20230806200957380_plasma.png" alt="Alster 1" class="images_table">
                     <div class="works-item">
-                        Ett av mina första verk. Skapad utifrån 30 slumpmässigt placerade punkter i bilden. Utifrån de har flera cirklar genererats som delvis överlappar varandra. Paletten som färglagt bilden är 'Plasma'.
+                        Skapad utifrån...
                     </div>
                 </td>
-                  <td>
-                    <div class="icons">
-                    <img src="works/image_cs_20230813190314305_s1_gray.png" alt="Bild 1" class="icon" onclick="changeImage('works/image_cs_20230813190314305_s1_gray.png')">
-                    <img src="works/image_cs_20230813190314305_s1_plasma.png" alt="Bild 2" class="icon" onclick="changeImage('works/image_cs_20230813190314305_s1_plasma.png')">
-                    <img src="works/image_cs_20230813190314305_s1_rainbow.png" alt="Bild 3" class="icon" onclick="changeImage('works/image_cs_20230813190314305_s1_rainbow.png')">
-                    <img src="works/image_cs_20230813190314305_s1_swe_light.png" alt="Bild 4" class="icon" onclick="changeImage('works/image_cs_20230813190314305_s1_swe_light.png')">
-                </div>
-            </td>
+    
                 </tr>
               </table>
 
-            <br><br><hr><br><br><br>
+              <br><br><hr><br><br><br>
+    
 
-            <img src="works/work_2.jpeg" class="images">
-            <br>
-            <div class="works-item">
-            Ett av mina första verk. Skapad utifrån 30 slumpmässigt placerade punkter i bilden. Utifrån de har flera cirklar genererats som delvis överlappar varandra. Paletten som färglagt bilden är 'Plasma'.
-            </div>
-            <br><br><hr><br><br><br>
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_2" src="works/image_20230806195633987_starling.png" alt="Alster 2" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20230806195633987_starling.png" alt="Alster 2 - 1" class="icon" onclick="changeImage('work_2','works/image_20230806195633987_starling.png')">
+            
+                        <img src="works/image_20230806195633987_pinksea.png" alt="Alster 2 - 2" class="icon" onclick="changeImage('work_2','works/image_20230806195633987_pinksea.png')">
+            
+                        <img src="works/image_20230806195633987_purplehaze.png" alt="Alster 2 - 3" class="icon" onclick="changeImage('work_2','works/image_20230806195633987_purplehaze.png')">
+            
+                        <img src="works/image_20230806195633987_forrest.png" alt="Alster 2 - 4" class="icon" onclick="changeImage('work_2','works/image_20230806195633987_forrest.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
 
-            <img src="works/work_3.jpeg" class="images">
-            <br>
-            <div class="works-item">
-            Skapad utifrån ett gitter av placerade punkter i bilden. Utifrån det har delvis transparanta ytor skapats som överlappar varandra. Paletten som färglagt bilden är 'Plasma'.
-            </div>
-            <br><br><hr><br><br><br>
+              <br><br><hr><br><br><br>
+    
 
-            <img src="works/work_4.jpeg" class="images">
-            <br>
-            <div class="works-item">
-            Planetsystem<br><br>
-            Skapad utifrån 8 punkter som placerats på en cirkelrand i bilden. Utifrån de har linjer dragits där kurvaturen på dem skall spegla rumtidens böjning. Paletten som färglagt bilden är 'Sweden'.
-            </div>
-            <br><br><hr><br><br><br>
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_3" src="works/image_20230806192615888_plasma.png" alt="Alster 3" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
 
-            <img src="works/work_5.jpeg" class="images">
-            <br>
-            <div class="works-item">
-            Solnedgång<br><br>
-            Skapad utifrån ett gitter av placerade punkter i bilden. Baserat på höjd i figuren och närhet till cirklar har bilden sedan färglagts. Paletten som färglagt bilden är 'Plasma'.
-            </div>
-            <br><br><hr><br><br><br>
+              <br><br><hr><br><br><br>
+    
 
-            <img src="works/work_6.jpeg" class="images">
-            <br>
-            <div class="works-item">
-            Skapad utifrån 30 slumpmässigt placerade punkter i bilden. Utifrån det har flera cirklar genererats som delvis överlappar varandra. Paletten som färglagt bilden är 'Grey'.
-            </div>
-            <br><br><hr><br><br><br>
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_4" src="works/image_20230813190832496_plasma.png" alt="Alster 4" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
 
+              <br><br><hr><br><br><br>
+    
 
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_5" src="works/image_20230808074243468_cmy.png" alt="Alster 5" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20230808074243468_cmy.png" alt="Alster 5 - 1" class="icon" onclick="changeImage('work_5','works/image_20230808074243468_cmy.png')">
+            
+                        <img src="works/image_20230808074243468_lux.png" alt="Alster 5 - 2" class="icon" onclick="changeImage('work_5','works/image_20230808074243468_lux.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
 
+              <br><br><hr><br><br><br>
+    
 
-            <br>
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_6" src="works/image_20240222094322670_meadow.png" alt="Alster 6" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20240222094322670_meadow.png" alt="Alster 6 - 1" class="icon" onclick="changeImage('work_6','works/image_20240222094322670_meadow.png')">
+            
+                        <img src="works/image_20240222094322670_plasma.png" alt="Alster 6 - 2" class="icon" onclick="changeImage('work_6','works/image_20240222094322670_plasma.png')">
+            
+                        <img src="works/image_20240222094322670_output.png" alt="Alster 6 - 3" class="icon" onclick="changeImage('work_6','works/image_20240222094322670_output.png')">
+            
+                        <img src="works/image_20240222094322670_interval.png" alt="Alster 6 - 4" class="icon" onclick="changeImage('work_6','works/image_20240222094322670_interval.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_7" src="works/image_2023123012192634_purplehaze.png" alt="Alster 7" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_2023123012192634_purplehaze.png" alt="Alster 7 - 1" class="icon" onclick="changeImage('work_7','works/image_2023123012192634_purplehaze.png')">
+            
+                        <img src="works/image_2023123012192634_retro.png" alt="Alster 7 - 2" class="icon" onclick="changeImage('work_7','works/image_2023123012192634_retro.png')">
+            
+                        <img src="works/image_2023123012192634_pinksea.png" alt="Alster 7 - 3" class="icon" onclick="changeImage('work_7','works/image_2023123012192634_pinksea.png')">
+            
+                        <img src="works/image_2023123012192634_autumn.png" alt="Alster 7 - 4" class="icon" onclick="changeImage('work_7','works/image_2023123012192634_autumn.png')">
+            
+                        <img src="works/image_2023123012192634_meadow.png" alt="Alster 7 - 5" class="icon" onclick="changeImage('work_7','works/image_2023123012192634_meadow.png')">
+            
+                        <img src="works/image_2023123012192634_starling.png" alt="Alster 7 - 6" class="icon" onclick="changeImage('work_7','works/image_2023123012192634_starling.png')">
+            
+                        <img src="works/image_2023123012192634_interval.png" alt="Alster 7 - 7" class="icon" onclick="changeImage('work_7','works/image_2023123012192634_interval.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_8" src="works/image_20231230100650408_plasma.png" alt="Alster 8" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20231230100650408_plasma.png" alt="Alster 8 - 1" class="icon" onclick="changeImage('work_8','works/image_20231230100650408_plasma.png')">
+            
+                        <img src="works/image_20231230100650408_retro.png" alt="Alster 8 - 2" class="icon" onclick="changeImage('work_8','works/image_20231230100650408_retro.png')">
+            
+                        <img src="works/image_20231230100650408_starling.png" alt="Alster 8 - 3" class="icon" onclick="changeImage('work_8','works/image_20231230100650408_starling.png')">
+            
+                        <img src="works/image_20231230100650408_rainbow.png" alt="Alster 8 - 4" class="icon" onclick="changeImage('work_8','works/image_20231230100650408_rainbow.png')">
+            
+                        <img src="works/image_20231230100650408_purplehaze.png" alt="Alster 8 - 5" class="icon" onclick="changeImage('work_8','works/image_20231230100650408_purplehaze.png')">
+            
+                        <img src="works/image_20231230100650408_interval.png" alt="Alster 8 - 6" class="icon" onclick="changeImage('work_8','works/image_20231230100650408_interval.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_9" src="works/image_20230806200406365_meadow.png" alt="Alster 9" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20230806200406365_meadow.png" alt="Alster 9 - 1" class="icon" onclick="changeImage('work_9','works/image_20230806200406365_meadow.png')">
+            
+                        <img src="works/image_20230806200406365_forrest.png" alt="Alster 9 - 2" class="icon" onclick="changeImage('work_9','works/image_20230806200406365_forrest.png')">
+            
+                        <img src="works/image_20230806200406365_interval.png" alt="Alster 9 - 3" class="icon" onclick="changeImage('work_9','works/image_20230806200406365_interval.png')">
+            
+                        <img src="works/image_20230806200406365_cmy.png" alt="Alster 9 - 4" class="icon" onclick="changeImage('work_9','works/image_20230806200406365_cmy.png')">
+            
+                        <img src="works/image_20230806200406365_alla.png" alt="Alster 9 - 5" class="icon" onclick="changeImage('work_9','works/image_20230806200406365_alla.png')">
+            
+                        <img src="works/image_20230806200406365_pinksea.png" alt="Alster 9 - 6" class="icon" onclick="changeImage('work_9','works/image_20230806200406365_pinksea.png')">
+            
+                        <img src="works/image_20230806200406365_purplehaze.png" alt="Alster 9 - 7" class="icon" onclick="changeImage('work_9','works/image_20230806200406365_purplehaze.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_10" src="works/image_20231230123705424_plasma.png" alt="Alster 10" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_11" src="works/image_202308061637015_pinksea.png" alt="Alster 11" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_202308061637015_pinksea.png" alt="Alster 11 - 1" class="icon" onclick="changeImage('work_11','works/image_202308061637015_pinksea.png')">
+            
+                        <img src="works/image_202308061637015_forrest.png" alt="Alster 11 - 2" class="icon" onclick="changeImage('work_11','works/image_202308061637015_forrest.png')">
+            
+                        <img src="works/image_202308061637015_gray.png" alt="Alster 11 - 3" class="icon" onclick="changeImage('work_11','works/image_202308061637015_gray.png')">
+            
+                        <img src="works/image_202308061637015_strawberry.png" alt="Alster 11 - 4" class="icon" onclick="changeImage('work_11','works/image_202308061637015_strawberry.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_12" src="works/image_2023081319333582_meadow.png" alt="Alster 12" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_2023081319333582_meadow.png" alt="Alster 12 - 1" class="icon" onclick="changeImage('work_12','works/image_2023081319333582_meadow.png')">
+            
+                        <img src="works/image_2023081319333582_retro.png" alt="Alster 12 - 2" class="icon" onclick="changeImage('work_12','works/image_2023081319333582_retro.png')">
+            
+                        <img src="works/image_2023081319333582_interval.png" alt="Alster 12 - 3" class="icon" onclick="changeImage('work_12','works/image_2023081319333582_interval.png')">
+            
+                        <img src="works/image_2023081319333582_autumn.png" alt="Alster 12 - 4" class="icon" onclick="changeImage('work_12','works/image_2023081319333582_autumn.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_13" src="works/image_20231230120612604_lux.png" alt="Alster 13" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20231230120612604_lux.png" alt="Alster 13 - 1" class="icon" onclick="changeImage('work_13','works/image_20231230120612604_lux.png')">
+            
+                        <img src="works/image_20231230120612604_interval.png" alt="Alster 13 - 2" class="icon" onclick="changeImage('work_13','works/image_20231230120612604_interval.png')">
+            
+                        <img src="works/image_20231230120612604_plasma.png" alt="Alster 13 - 3" class="icon" onclick="changeImage('work_13','works/image_20231230120612604_plasma.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_14" src="works/image_20240222094835374_plasma.png" alt="Alster 14" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_15" src="works/image_20230813190314305_interval.png" alt="Alster 15" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20230813190314305_interval.png" alt="Alster 15 - 1" class="icon" onclick="changeImage('work_15','works/image_20230813190314305_interval.png')">
+            
+                        <img src="works/image_20230813190314305_plasma.png" alt="Alster 15 - 2" class="icon" onclick="changeImage('work_15','works/image_20230813190314305_plasma.png')">
+            
+                        <img src="works/image_20230813190314305_cmy.png" alt="Alster 15 - 3" class="icon" onclick="changeImage('work_15','works/image_20230813190314305_cmy.png')">
+            
+                        <img src="works/image_20230813190314305_starling.png" alt="Alster 15 - 4" class="icon" onclick="changeImage('work_15','works/image_20230813190314305_starling.png')">
+            
+                        <img src="works/image_20230813190314305_purplehaze.png" alt="Alster 15 - 5" class="icon" onclick="changeImage('work_15','works/image_20230813190314305_purplehaze.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_16" src="works/image_20240222104111567_meadow.png" alt="Alster 16" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20240222104111567_meadow.png" alt="Alster 16 - 1" class="icon" onclick="changeImage('work_16','works/image_20240222104111567_meadow.png')">
+            
+                        <img src="works/image_20240222104111567_forrest.png" alt="Alster 16 - 2" class="icon" onclick="changeImage('work_16','works/image_20240222104111567_forrest.png')">
+            
+                        <img src="works/image_20240222104111567_purplehaze.png" alt="Alster 16 - 3" class="icon" onclick="changeImage('work_16','works/image_20240222104111567_purplehaze.png')">
+            
+                        <img src="works/image_20240222104111567_pinksea.png" alt="Alster 16 - 4" class="icon" onclick="changeImage('work_16','works/image_20240222104111567_pinksea.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_17" src="works/image_20250218084314802_lux.png" alt="Alster 17" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20250218084314802_lux.png" alt="Alster 17 - 1" class="icon" onclick="changeImage('work_17','works/image_20250218084314802_lux.png')">
+            
+                        <img src="works/image_20250218084314802_starling.png" alt="Alster 17 - 2" class="icon" onclick="changeImage('work_17','works/image_20250218084314802_starling.png')">
+            
+                        <img src="works/image_20250218084314802_retro.png" alt="Alster 17 - 3" class="icon" onclick="changeImage('work_17','works/image_20250218084314802_retro.png')">
+            
+                        <img src="works/image_20250218084314802_rainbow.png" alt="Alster 17 - 4" class="icon" onclick="changeImage('work_17','works/image_20250218084314802_rainbow.png')">
+            
+                        <img src="works/image_20250218084314802_autumn.png" alt="Alster 17 - 5" class="icon" onclick="changeImage('work_17','works/image_20250218084314802_autumn.png')">
+            
+                        <img src="works/image_20250218084314802_interval.png" alt="Alster 17 - 6" class="icon" onclick="changeImage('work_17','works/image_20250218084314802_interval.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_18" src="works/image_20231230100806572_starling.png" alt="Alster 18" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20231230100806572_starling.png" alt="Alster 18 - 1" class="icon" onclick="changeImage('work_18','works/image_20231230100806572_starling.png')">
+            
+                        <img src="works/image_20231230100806572_interval.png" alt="Alster 18 - 2" class="icon" onclick="changeImage('work_18','works/image_20231230100806572_interval.png')">
+            
+                        <img src="works/image_20231230100806572_autumn.png" alt="Alster 18 - 3" class="icon" onclick="changeImage('work_18','works/image_20231230100806572_autumn.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_19" src="works/image_20231230111744448_interval.png" alt="Alster 19" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20231230111744448_interval.png" alt="Alster 19 - 1" class="icon" onclick="changeImage('work_19','works/image_20231230111744448_interval.png')">
+            
+                        <img src="works/image_20231230111744448_autumn.png" alt="Alster 19 - 2" class="icon" onclick="changeImage('work_19','works/image_20231230111744448_autumn.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_20" src="works/image_20230806171916665_plasma.png" alt="Alster 20" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20230806171916665_plasma.png" alt="Alster 20 - 1" class="icon" onclick="changeImage('work_20','works/image_20230806171916665_plasma.png')">
+            
+                        <img src="works/image_20230806171916665_interval.png" alt="Alster 20 - 2" class="icon" onclick="changeImage('work_20','works/image_20230806171916665_interval.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_21" src="works/image_20231230111613660_plasma.png" alt="Alster 21" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_22" src="works/image_20231230124350130_plasma.png" alt="Alster 22" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_23" src="works/image_20240222094759318_plasma.png" alt="Alster 23" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_24" src="works/image_20231231082621682_plasma.png" alt="Alster 24" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_25" src="works/image_20230806164320209_meadow.png" alt="Alster 25" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20230806164320209_meadow.png" alt="Alster 25 - 1" class="icon" onclick="changeImage('work_25','works/image_20230806164320209_meadow.png')">
+            
+                        <img src="works/image_20230806164320209_retro.png" alt="Alster 25 - 2" class="icon" onclick="changeImage('work_25','works/image_20230806164320209_retro.png')">
+            
+                        <img src="works/image_20230806164320209_purplehaze.png" alt="Alster 25 - 3" class="icon" onclick="changeImage('work_25','works/image_20230806164320209_purplehaze.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_26" src="works/image_20230806164137984_plasma.png" alt="Alster 26" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_27" src="works/image_20231230123407977_autumn.png" alt="Alster 27" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20231230123407977_autumn.png" alt="Alster 27 - 1" class="icon" onclick="changeImage('work_27','works/image_20231230123407977_autumn.png')">
+            
+                        <img src="works/image_20231230123407977_starling.png" alt="Alster 27 - 2" class="icon" onclick="changeImage('work_27','works/image_20231230123407977_starling.png')">
+            
+                        <img src="works/image_20231230123407977_interval.png" alt="Alster 27 - 3" class="icon" onclick="changeImage('work_27','works/image_20231230123407977_interval.png')">
+            
+                        <img src="works/image_20231230123407977_retro.png" alt="Alster 27 - 4" class="icon" onclick="changeImage('work_27','works/image_20231230123407977_retro.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_28" src="works/image_202308061902279_plasma.png" alt="Alster 28" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_29" src="works/image_20230806200350568_plasma.png" alt="Alster 29" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_30" src="works/image_20231230123517296_interval.png" alt="Alster 30" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20231230123517296_interval.png" alt="Alster 30 - 1" class="icon" onclick="changeImage('work_30','works/image_20231230123517296_interval.png')">
+            
+                        <img src="works/image_20231230123517296_autumn.png" alt="Alster 30 - 2" class="icon" onclick="changeImage('work_30','works/image_20231230123517296_autumn.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_31" src="works/image_20230806182957825_plasma.png" alt="Alster 31" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_32" src="works/image_20230813195949702_plasma.png" alt="Alster 32" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_33" src="works/image_2023080807010475_retro.png" alt="Alster 33" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_2023080807010475_retro.png" alt="Alster 33 - 1" class="icon" onclick="changeImage('work_33','works/image_2023080807010475_retro.png')">
+            
+                        <img src="works/image_2023080807010475_interval.png" alt="Alster 33 - 2" class="icon" onclick="changeImage('work_33','works/image_2023080807010475_interval.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_34" src="works/image_20230806163915433_plasma.png" alt="Alster 34" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_35" src="works/image_20231230124413265_interval.png" alt="Alster 35" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20231230124413265_interval.png" alt="Alster 35 - 1" class="icon" onclick="changeImage('work_35','works/image_20231230124413265_interval.png')">
+            
+                        <img src="works/image_20231230124413265_starling.png" alt="Alster 35 - 2" class="icon" onclick="changeImage('work_35','works/image_20231230124413265_starling.png')">
+            
+                        <img src="works/image_20231230124413265_autumn.png" alt="Alster 35 - 3" class="icon" onclick="changeImage('work_35','works/image_20231230124413265_autumn.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_36" src="works/image_20231230121919932_plasma.png" alt="Alster 36" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_37" src="works/image_2024022309010515_plasma.png" alt="Alster 37" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_38" src="works/image_20240222094108611_plasma.png" alt="Alster 38" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_39" src="works/image_2023123012285061_meadow.png" alt="Alster 39" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_2023123012285061_meadow.png" alt="Alster 39 - 1" class="icon" onclick="changeImage('work_39','works/image_2023123012285061_meadow.png')">
+            
+                        <img src="works/image_2023123012285061_plasma.png" alt="Alster 39 - 2" class="icon" onclick="changeImage('work_39','works/image_2023123012285061_plasma.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_40" src="works/image_20231230100741697_plasma.png" alt="Alster 40" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_41" src="works/image_20240223083013649_plasma.png" alt="Alster 41" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_42" src="works/image_2023080708435310_plasma.png" alt="Alster 42" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_43" src="works/image_20240223085801208_plasma.png" alt="Alster 43" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_44" src="works/image_20240223082823182_plasma.png" alt="Alster 44" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_45" src="works/image_20230806200358742_plasma.png" alt="Alster 45" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_46" src="works/image_2023123012271677_plasma.png" alt="Alster 46" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_47" src="works/image_20240222094814390_plasma.png" alt="Alster 47" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_48" src="works/image_20230806172843307_plasma.png" alt="Alster 48" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_49" src="works/image_20231230121614525_plasma.png" alt="Alster 49" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_50" src="works/image_20231230105633117_plasma.png" alt="Alster 50" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_51" src="works/image_20230807084103506_plasma.png" alt="Alster 51" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_52" src="works/image_20231230124626325_plasma.png" alt="Alster 52" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_53" src="works/image_2024022220540421_plasma.png" alt="Alster 53" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_54" src="works/image_20240222094313525_plasma.png" alt="Alster 54" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                  <td>
+                    <div class="icons">
+        
+                        <img src="works/image_20240222094313525_plasma.png" alt="Alster 54 - 1" class="icon" onclick="changeImage('work_54','works/image_20240222094313525_plasma.png')">
+            
+                        <img src="works/image_20240222094313525_cmy.png" alt="Alster 54 - 2" class="icon" onclick="changeImage('work_54','works/image_20240222094313525_cmy.png')">
+            
+                    </div>
+                </td>
+        
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_55" src="works/image_20250218085348455_cmy.png" alt="Alster 55" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_56" src="works/image_20230806192555542_interval.png" alt="Alster 56" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_57" src="works/image_20230807084229884_plasma.png" alt="Alster 57" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_58" src="works/image_20231230105322850_plasma.png" alt="Alster 58" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_59" src="works/image_2024022308352739_plasma.png" alt="Alster 59" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_60" src="works/image_20231230123851750_autumn.png" alt="Alster 60" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_61" src="works/image_20240223084926106_lux.png" alt="Alster 61" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_62" src="works/image_20231230124118326_interval.png" alt="Alster 62" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_63" src="works/image_20230806163722812_plasma.png" alt="Alster 63" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_64" src="works/image_20230807084117977_plasma.png" alt="Alster 64" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+
+            <table class="centered-table">
+                <tr>
+                  <td><img id="work_65" src="works/image_20231230122836261_plasma.png" alt="Alster 65" class="images_table">
+                    <div class="works-item">
+                        Skapad utifrån...
+                    </div>
+                </td>
+    
+                </tr>
+              </table>
+
+              <br><br><hr><br><br><br>
+    
+    
+            
         </seciton>
     </main>
 
