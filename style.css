@@ -14,7 +14,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #160758;
     color: white;
     padding: 30px 20px;
     margin-bottom: 0;
@@ -56,9 +56,9 @@ h1 {
 
 /* Dropdown knapp */
 .dropdown-btn {
-    background-color: #444;
+    background-color: #160758;
     color: white;
-    border: 1px solid #333;
+    border: 1px solid #160758;
     padding: 5px 10px;
     font-size: 16px;
     cursor: pointer;
@@ -70,7 +70,7 @@ h1 {
 }
 
 .dropdown-btn:hover {
-    background-color: #555;
+    background-color: #160758;
 }
 
 /* Dropdown meny */
@@ -79,7 +79,7 @@ h1 {
     position: absolute;
     top: 35px;
     right: 0;
-    background-color: #444;
+    background-color: #10053f;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -93,7 +93,7 @@ h1 {
 }
 
 .dropdown-menu li {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #10053f;
 }
 
 .dropdown-menu li:last-child {
@@ -130,7 +130,7 @@ h1 {
 .main-nav {
     position: sticky;
     top: 148px; /* Stannar precis under headern */
-    background-color: #444;
+    background-color: rgb(14, 6, 49);
     color: white;
     padding: 10px 0;
     margin: 0;
@@ -223,7 +223,7 @@ h1 {
 
 /* Footer: Rand längst ner */
 .site-footer {
-    background-color: #333; /* Samma färg som headern */
+    background-color: rgb(0, 0, 0); /* Samma färg som headern */
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -290,7 +290,7 @@ h1 {
 }
 
 .info-item a {
-    color: #007BFF;
+    color: #010407;
     text-decoration: none;
 }
 
