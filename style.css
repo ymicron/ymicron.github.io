@@ -462,7 +462,7 @@ ul li {
     }
 
     .icons {
-        flex-direction: row; /* Gör ikonerna horisontella på mobil */
+        flex-direction: column; /* Gör ikonerna horisontella på mobil */
     }
 
     .icons .icon {
