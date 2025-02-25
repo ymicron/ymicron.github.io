@@ -423,7 +423,7 @@ ul li {
         font-size: 14px; /* Minskar textstorlek på mobiler */
         padding: 8px 0;
     }
-
+    
     .content, .works {
         width: 80%; /* Bredden på innehållet ökar för mobiler */
     }
