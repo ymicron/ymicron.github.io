@@ -189,7 +189,7 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 40%;
     height: auto;
     border: 1px solid black;
 }
@@ -346,7 +346,7 @@ ul li {
 
 .centered-table {
     margin: 0 auto; /* Centrerar tabellen horisontellt */
-    width: 50%; /* Du kan justera bredden på tabellen om du vill */
+    width: 100%; /* Du kan justera bredden på tabellen om du vill */
   }
   
   .centered-table td {
