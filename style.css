@@ -185,6 +185,24 @@ h1 {
     border: 1px solid black;
 }
 
+.images_table {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.images_small {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: auto;
+    border: 1px solid black;
+}
+
 /* Sektion med två bilder som täcker hela bredden */
 .image-section {
     display: flex;
@@ -219,19 +237,157 @@ h1 {
     font-size: 14px;
 }
 
-.site-footer {
-    position: relative;
-    bottom: 0;
+.contact-page {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.contact-page h1 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-page p {
+    text-align: center;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;  /* Centrerar rutorna horisontellt */
+}
+
+.works-item {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    width: 100%;  /* Sätt bredden på varje ruta till 40% av sidans bredd */
+    margin: 0 auto;
+}
+
+.info-item {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    width: 40%;  /* Sätt bredden på varje ruta till 40% av sidans bredd */
+}
+
+.info-item h2 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    color: #666;
+}
+
+.info-item a {
+    color: #010407;
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrerar innehållet horisontellt */
+}
+
+
+
+.main-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; /* Justera avståndet mellan bilden och ikonerna om det behövs */
+}
+
+
+.icons .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px; /* Avstånd mellan varje ikon */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icons .icon:hover {
+    transform: scale(1.1);
+}
+
+.centered-table {
+    margin: 0 auto; /* Centrerar tabellen horisontellt */
+    width: 50%; /* Du kan justera bredden på tabellen om du vill */
+  }
+  
+  .centered-table td {
+    padding: 10px; /* Lite padding för att ge utrymme mellan cellerna */
+    text-align: center; /* Centrerar texten i varje cell */
+  }
+  
+
+  .about {
+    text-align: left;
+
+  }
+
+  .thumbnail-table {
+    width: 40%;  /* Sätt bredden på tabellen till 40% */
+    margin: 0 auto; /* Centrerar tabellen på sidan */
+    table-layout: auto; /* Gör att tabellen inte försöker fylla hela bredden */
+}
+
+
+.thumbnail-table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.thumbnail {
+    width: 100px; /* Anpassa storleken på miniatyrbilderna */
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1); /* Gör miniatyrbilden lite större när muspekaren är över den */
 }
 
 /* Användargränssnitt för mobil */
 @media (max-width: 768px) {
     body {
-        padding-top: 170px; /* För att ge plats för header på mobiler */
-    }
-
-    .header-content {
-        flex-direction: row; /* Logotyp och titel i rad på mobiler */
+        padding-top: 170px; /* Ger plats för fixerat header på mobiler */
     }
 
     .site-header {
@@ -239,8 +395,18 @@ h1 {
         justify-content: space-between;
     }
 
+    .header-content {
+        flex-direction: row; /* Logotyp och titel i rad */
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
     h1 {
-        font-size: 20px; /* Mindre text på mobiler */
+        font-size: 18px; /* Minskar titeln på mobiler */
     }
 
     .language-dropdown {
@@ -249,12 +415,12 @@ h1 {
     }
 
     .main-nav ul li {
-        display: block; /* Gör menyn vertikal */
+        display: block; /* Gör menyn vertikal på mobiler */
         margin: 5px 0;
     }
 
     .main-nav ul li a {
-        font-size: 14px; /* Mindre text på mobiler */
+        font-size: 14px; /* Minskar textstorlek på mobiler */
         padding: 8px 0;
     }
 
@@ -263,7 +429,16 @@ h1 {
     }
 
     .images {
-        width: 80%; /* Förstora bilder på mobiler */
+        width: 80%; /* Förstorar bilder på mobiler */
+    }
+
+    .images_small {
+        width: 60%; /* Gör små bilder större på mobiler */
+    }
+
+    .images_table {
+        width: 100%; /* Gör tabellen full bredd på mobiler */
+        padding: 5px;
     }
 
     /* Hero image: Gör att bilden täcker hela bredden på mobil */
@@ -272,27 +447,26 @@ h1 {
         height: auto;
     }
 
-    /* Footer: Anpassa footer på mobiler */
     .site-footer {
-        font-size: 12px; /* Mindre text i footer på mobiler */
+        font-size: 12px; /* Minskar textstorlek på footer för mobiler */
     }
 
-    /* För bilder som är i två sektioner */
     .image-section {
-        flex-direction: column; /* Gör bilderna vertikala på mobiler */
+        flex-direction: column; /* Gör att bilderna går vertikalt på mobiler */
         height: auto;
     }
 
     .image-left, .image-right {
-        flex: 1 1 100%; /* Gör bilderna 100% bredd på mobiler */
+        flex: none;
+        width: 100%;
     }
 
-    /* Thumbnailbilder */
-    .thumbnail-table td {
-        padding: 5px;
+    .icons {
+        flex-direction: row; /* Gör ikonerna horisontella på mobil */
     }
 
-    .thumbnail {
-        width: 80px; /* Minska storleken på miniatyrbilder på mobiler */
+    .icons .icon {
+        width: 40px;
+        height: 40px;
     }
 }
