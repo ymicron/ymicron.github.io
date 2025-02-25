@@ -417,7 +417,7 @@ ul li {
     .main-nav {
         top: 120px; /* Justera menyns top-position för att ligga närmare headern */
     }
-
+    
     .main-nav ul li {
         display: block; /* Gör menyn vertikal på mobiler */
         margin: 5px 0;
