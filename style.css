@@ -387,7 +387,7 @@ ul li {
 /* Användargränssnitt för mobil */
 @media (max-width: 768px) {
     body {
-        padding-top: 80px; /* Ger plats för fixerat header på mobiler */
+        padding-top: 75px; /* Ger plats för fixerat header på mobiler */
     }
 
     .site-header {
@@ -416,7 +416,7 @@ ul li {
     }
 
     .main-nav {
-        top: 80px; /* Justera menyns top-position för att ligga närmare headern */
+        top: 75px; /* Justera menyns top-position för att ligga närmare headern */
     }
     
     .main-nav ul li {
