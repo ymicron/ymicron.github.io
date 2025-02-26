@@ -83,4 +83,26 @@ window.addEventListener('DOMContentLoaded', function() {
         // Lägg till cellen i den aktuella raden
         row.appendChild(cell);
     });
+
+    // Lägg till en event listener för länkarna
+    const links = document.querySelectorAll('a[href^="#"]'); // Hämta alla länkar som börjar med #
+
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Förhindra standardbeteendet för länken
+
+            // Hämta elementet som är målet för länken
+            const targetId = link.getAttribute('href').substring(1); // Ta bort '#' från href
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                // Använd scrollIntoView för att rulla till målbilden
+
+                targetElement.scrollIntoView({
+                    behavior: 'smooth', // Gör rullningen mjuk
+                    block: 'center'     // Centrera bilden vertikalt i fönstret
+                });
+            }
+        });
+    });
 });
