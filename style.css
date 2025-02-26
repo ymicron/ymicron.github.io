@@ -398,7 +398,7 @@ ul li {
     .header-content {
         flex-direction: row; /* Logotyp och titel i rad */
         justify-content: space-between;
-        gap: 10px; /* Öka värdet här för mer utrymme */
+        gap: 20px; /* Öka värdet här för mer utrymme */
     }
 
     .logo {
