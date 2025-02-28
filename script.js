@@ -97,12 +97,19 @@ window.addEventListener('DOMContentLoaded', function() {
 
             if (targetElement) {
                 // Använd scrollIntoView för att rulla till målbilden
-
                 targetElement.scrollIntoView({
                     behavior: 'smooth', // Gör rullningen mjuk
                     block: 'center'     // Centrera bilden vertikalt i fönstret
                 });
+
+                // Omedelbart efter scrollning, justera scrollTop för att flytta sidan längre ner
+                window.scrollBy(0, -100); // Scrolla lite längre ner (eller upp), justera värdet
             }
         });
     });
+
+
+
+
+
 });
