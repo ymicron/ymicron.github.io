@@ -1,0 +1,52 @@
+{
+    "stamp": "2023123012192634",
+    "seed": 1,
+    "normalize_lens": true,
+    "parameters": {
+        "lens_number": 3,
+        "para_distFunction": [
+            2,
+            0,
+            0
+        ],
+        "para_valueFunction": [
+            0.1,
+            -1,
+            0
+        ],
+        "distNbr": -1,
+        "valueNbr": -1
+    },
+    "project": {
+        "projection_type": 1,
+        "n_in": 1,
+        "n_out": 1.01,
+        "lens_thickness": 0.2,
+        "projection_distance": 2,
+        "do": true
+    },
+    "writeimage": {
+        "output_folder": "/home/bearbar/Dropbox/Projects/Refraction/Output/",
+        "colormap_folder": "/home/bearbar/Dropbox/Projects/Refraction/Colormaps/",
+        "color_spline": 2,
+        "colormapi": false,
+        "colormapr": false
+    },
+    "points": {
+        "positions": 0,
+        "N": 50,
+        "linesegment": false,
+        "lines": false,
+        "grid_relics": false,
+        "shuffle": false,
+        "connected_lines": false,
+        "symmetric_points_x": false,
+        "symmetric_points_y": false,
+        "seed": 3
+    },
+    "lattice": {
+        "Lx": 1024,
+        "Ly": 1024,
+        "pbc": false
+    }
+}
