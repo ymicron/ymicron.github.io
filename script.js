@@ -1,21 +1,20 @@
-// Hämta referenser till element
-const languageBtn = document.getElementById('language-btn');
-const dropdownMenu = document.getElementById('language-dropdown').querySelector('.dropdown-menu');
+// Hämta referenser till språkknapparna
+const languageBtnSv = document.getElementById('language-btn-sv');
+const languageBtnEn = document.getElementById('language-btn-en');
 
-// Lägg till en event listener på språkknappen för att växla synligheten på menyn
-languageBtn.addEventListener('click', function(event) {
-    event.preventDefault(); // Förhindra att knappen gör något annat, t.ex. ladda om sidan
-    
-    // Växla synligheten på menyn
-    dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+// Lägg till event listeners för språkknapparna
+languageBtnSv.addEventListener('click', function() {
+    // Byt till svenska språket, du kan lägga till logik här för att ändra innehåll
+    console.log('Byt till svenska');
+    // Här kan du till exempel uppdatera textinnehåll, länkar eller dylikt
 });
 
-// Stäng dropdown menyn om användaren klickar utanför
-window.addEventListener('click', function(event) {
-    if (!languageBtn.contains(event.target) && !dropdownMenu.contains(event.target)) {
-        dropdownMenu.style.display = 'none'; // Stänger menyn om man klickar utanför
-    }
+languageBtnEn.addEventListener('click', function() {
+    // Byt till engelska språket, du kan lägga till logik här för att ändra innehåll
+    console.log('Byt till engelska');
+    // Här kan du till exempel uppdatera textinnehåll, länkar eller dylikt
 });
+
 
 //function changeImage(imageSrc) {
 //    document.getElementById("mainImage").src = imageSrc;
