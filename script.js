@@ -117,15 +117,5 @@ window.addEventListener('DOMContentLoaded', function() {
                 console.log("Target element not found.");
             }
         });
-        
-        
-        
-        
-        
     });
-
-
-
-
-
 });
