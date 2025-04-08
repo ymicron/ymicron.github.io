@@ -90,22 +90,39 @@ window.addEventListener('DOMContentLoaded', function() {
     links.forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault(); // Förhindra standardbeteendet för länken
-
+        
             // Hämta elementet som är målet för länken
             const targetId = link.getAttribute('href').substring(1); // Ta bort '#' från href
             const targetElement = document.getElementById(targetId);
-
+        
             if (targetElement) {
-                // Använd scrollIntoView för att rulla till målbilden
-                targetElement.scrollIntoView({
-                    behavior: 'smooth', // Gör rullningen mjuk
-                    block: 'center'     // Centrera bilden vertikalt i fönstret
+                // Använd getBoundingClientRect för att få positionen på elementet
+                const rect = targetElement.getBoundingClientRect();
+                const targetElementTop = rect.top + window.scrollY;
+        
+                // Logga elementets position
+                console.log("Target element: ", targetElement);
+                console.log("Target element top position: " + targetElementTop);
+        
+                // Hämta höjden på headern
+                const headerHeight = document.querySelector('.site-header').offsetHeight;
+                console.log("Header height: " + headerHeight);
+        
+                // Scrolla ner till elementet plus extra antal pixlar (t.ex. 200px längre ner)
+                const extraScroll = -45;  // Lägg till detta värde för att scrolla längre ner
+                window.scrollTo({
+                    top: targetElementTop - headerHeight + extraScroll, // Justera för headerns höjd, extra utrymme och rulla längre ner
+                    behavior: 'smooth' // Gör rullningen mjuk
                 });
-
-                // Omedelbart efter scrollning, justera scrollTop för att flytta sidan längre ner
-                window.scrollBy(0, -100); // Scrolla lite längre ner (eller upp), justera värdet
+            } else {
+                console.log("Target element not found.");
             }
         });
+        
+        
+        
+        
+        
     });
 
 
