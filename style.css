@@ -288,11 +288,13 @@ h1 {
 }
 
 .info-item {
-    background-color: #fafafa;
+    background-color: rgb(255, 252, 247);
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 3px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-    width: 40%;  /* Sätt bredden på varje ruta till 40% av sidans bredd */
+    width: 30%;  /* Sätt bredden på varje ruta till 40% av sidans bredd */
+    margin: 0 auto;
+    border: 2px solid rgb(226, 226, 226);
 }
 
 .info-item h2 {
